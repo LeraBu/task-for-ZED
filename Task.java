@@ -9,14 +9,14 @@ public class Task {
         int y = 0;
         char[] result = route.toCharArray();
         for (char c : result) {
-            if (c == 'N') x++;
-            else if (c == 'S') x--;
-            else if (c == 'E') y++;
-            else if (c == 'W') y--;
-            else System.out.println("В построении маршрута ошибка");
+            if (c == 'N') y++;
+            else if (c == 'S') y--;
+            else if (c == 'E') x++;
+            else if (c == 'W') x--;
+            else System.out.println("Error in building route");
         }
         if ((x == 0) && (y == 0))
-        return "Это хороший маршрут";
-        else return "Это плохой маршрут";
+        return "This is a good route";
+        else return "This is a bad route";
     }
 }
