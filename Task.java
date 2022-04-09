@@ -1,13 +1,14 @@
 public class Task {
     public static void main(String[] args) {
-        String route = "NSEWNSWENS";
+        String route = "NSEWNSWENSNNNNNNNN";
         System.out.println(isItAGoodRoute(route));
     }
 
     public static String isItAGoodRoute(String route){
+        String routeForTenDays = route.substring(0, 10);
         int x = 0;
         int y = 0;
-        char[] result = route.toCharArray();
+        char[] result = routeForTenDays.toCharArray();
         for (char c : result) {
             if (c == 'N') y++;
             else if (c == 'S') y--;
