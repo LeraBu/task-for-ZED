@@ -1,8 +1,6 @@
-import java.util.Objects;
-
 public class Task {
     public static void main(String[] args) {
-        String route = "NSEWWSENNE";
+        String route = "NSEWNSWENS";
         System.out.println(isItAGoodRoute(route));
     }
 
@@ -10,11 +8,11 @@ public class Task {
         int x = 0;
         int y = 0;
         char[] result = route.toCharArray();
-        for (int i = 0; i<result.length; i++){
-            if (result[i] == 'N') x++;
-            else if (result[i] == 'S') x--;
-            else if (result[i] == 'E') y++;
-            else if (result[i] == 'W') y--;
+        for (char c : result) {
+            if (c == 'N') x++;
+            else if (c == 'S') x--;
+            else if (c == 'E') y++;
+            else if (c == 'W') y--;
             else System.out.println("В построении маршрута ошибка");
         }
         if ((x == 0) && (y == 0))
