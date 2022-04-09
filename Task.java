@@ -1,22 +1,23 @@
 public class Task {
     public static void main(String[] args) {
-        String route = "NSEWNSWENS";
+        String route = "NSEWNSWENSNNNNNNNNN";
         System.out.println(isItAGoodRoute(route));
     }
 
     public static String isItAGoodRoute(String route){
+        String routeForTenDays = route.substring(0, 9);
         int x = 0;
         int y = 0;
-        char[] result = route.toCharArray();
+        char[] result = routeForTenDays.toCharArray();
         for (char c : result) {
-            if (c == 'N') x++;
-            else if (c == 'S') x--;
-            else if (c == 'E') y++;
-            else if (c == 'W') y--;
-            else System.out.println("В построении маршрута ошибка");
+            if (c == 'N') y++;
+            else if (c == 'S') y--;
+            else if (c == 'E') x++;
+            else if (c == 'W') x--;
+            else System.out.println("Error in building route");
         }
         if ((x == 0) && (y == 0))
-        return "Это хороший маршрут";
-        else return "Это плохой маршрут";
+        return "This is a good route";
+        else return "This is a bad route";
     }
 }
