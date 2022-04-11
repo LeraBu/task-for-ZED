@@ -1,7 +1,14 @@
+import org.joda.time.Interval;
+import org.joda.time.LocalDate;
+import org.joda.time.Period;
+
 public class Task {
     public static void main(String[] args) {
         String route = "NSEWNSWENSNNNNNNNN";
         System.out.println(isItAGoodRoute(route));
+
+        LocalDate date1 = new LocalDate(2022, 1, 10);
+        System.out.println(howManyDays(date1));
     }
 
     public static String isItAGoodRoute(String route){
@@ -19,5 +26,9 @@ public class Task {
         if ((x == 0) && (y == 0))
         return "This is a good route";
         else return "This is a bad route";
+    }
+
+    public static Period howManyDays(LocalDate date){
+        return new Period(LocalDate.now(), date);
     }
 }
