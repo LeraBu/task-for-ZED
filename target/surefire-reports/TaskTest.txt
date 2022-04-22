@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: TaskTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.1 sec <<< FAILURE!
-initializationError(TaskTest)  Time elapsed: 0.008 sec  <<< ERROR!
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.123 sec <<< FAILURE!
+initializationError(TaskTest)  Time elapsed: 0.015 sec  <<< ERROR!
 org.junit.runners.model.InvalidTestClassError: Invalid test class 'TaskTest':
   1. The class TaskTest is not public.
   2. Test class should have exactly one public constructor

@@ -1,13 +1,13 @@
 import org.joda.time.LocalDate;
 import org.joda.time.Period;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class TaskTest {
 
     @Test
-    public void whenRouteEqual_returnsTrue() {
+    void isItAGoodRouteTest() {
         String route1 = "NNNNNNNNNN";
         assertEquals("This is a bad route", Task.isItAGoodRoute(route1));
     }
