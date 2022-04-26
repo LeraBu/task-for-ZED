@@ -1,5 +1,5 @@
 <component name="libraryTable">
-  <library name="junit5" type="repository">
+  <library name="jupiter" type="repository">
     <properties maven-id="com.automation-remarks:video-recorder-junit5:1.8" />
     <ANNOTATIONS>
       <root url="file://$MAVEN_REPOSITORY$/com/automation-remarks/video-recorder-junit5/1.8" />

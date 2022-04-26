@@ -6,6 +6,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class TaskTest {
 
+
     @Test
     void isItAGoodRouteTest() {
         String route1 = "NNNNNNNNNN";
