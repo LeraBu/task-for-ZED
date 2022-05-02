@@ -1,6 +1,3 @@
-/*import org.joda.time.LocalDate;
-import org.joda.time.Period; */
-
 import org.joda.time.LocalDate;
 import org.joda.time.Period;
 
@@ -34,3 +31,4 @@ public class Task {
         return new Period(LocalDate.now(), date);
     }
 }
+
