@@ -1,4 +1,3 @@
-import org.joda.time.Interval;
 import org.joda.time.LocalDate;
 import org.joda.time.Period;
 
@@ -32,3 +31,4 @@ public class Task {
         return new Period(LocalDate.now(), date);
     }
 }
+
